@@ -1,23 +1,21 @@
 fun main() {
-    print("Enter your year of birth: ")
-    val birthYear = readLine()?.toInt()
+    val numbers = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
-    if (birthYear != null) {
-        val age = calculateAge(birthYear)
-        println("Your age is $age")
-    } else {
-        println("Invalid input")
+    for (number in numbers) {
+        val classification = when {
+            number % 2 == 0 -> "even"
+            else -> "odd"
+        }
+        println("$number is $classification")
+    }
+    val nums = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+    for (number in nums) {
+        if (number % 2 == 0) {
+            println("$number is even")
+        } else {
+            println("$number is odd")
+        }
     }
 }
-
-fun calculateAge(birthYear: Int): Int {
-    val currentYear = 2023 // Replace with the current year
-    return if (currentYear >= birthYear) {
-        currentYear - birthYear
-    } else {
-        0
-    }
-}
-
-
 
