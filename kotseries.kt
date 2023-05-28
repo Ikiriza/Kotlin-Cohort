@@ -7,7 +7,7 @@ fun main() {
             else -> "odd"
         }
           
-       
+   
        
         println("$number is $classification")
     }
