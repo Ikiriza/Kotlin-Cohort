@@ -6,8 +6,7 @@ fun main() {
             number % 2 == 0 -> "even"
             else -> "odd"
         }
-  
-  
+ 
        
         println("$number is $classification")
     }
@@ -22,5 +21,3 @@ fun main() {
         }
     }
 }
-
-
